@@ -254,8 +254,8 @@ const AdminLeavesPage: React.FC = () => {
                             </AvatarFallback>
                           </Avatar>
                           <div>
-                            <p className="font-medium">{leave.profile?.full_name}</p>
-                            <p className="text-sm text-muted-foreground">{leave.profile?.email}</p>
+                            <p className="font-medium">{leave.profile?.full_name || 'Unknown Employee'}</p>
+                            <p className="text-sm text-muted-foreground">{leave.profile?.email || 'No email'}</p>
                           </div>
                         </div>
                       </TableCell>
